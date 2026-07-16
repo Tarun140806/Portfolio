@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Tarun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">tarun<span class="dot">.</span>dev</div>
+    <nav class="tabs">
+      <a class="tab" href="index.html">home<span class="ext">.html</span></a>
+      <a class="tab active" href="about.html">about<span class="ext">.html</span></a>
+      <a class="tab" href="projects.html">projects<span class="ext">.html</span></a>
+      <a class="tab" href="skills.html">skills<span class="ext">.json</span></a>
+      <a class="tab" href="contact.html">contact<span class="ext">.html</span></a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">menu</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="section" style="border-top:none; padding-top:48px;">
+    <div class="section-head">
+      <span class="path">~/about</span>
+      <h2>about.html</h2>
+    </div>
+
+    <div class="about-grid">
+      <div>
+        <p>
+          I'm <strong>Tarun</strong>, a B.Tech student in Artificial Intelligence
+          and Data Science at Shiv Nadar University Chennai. Most of what I do lives on the
+          backend — designing APIs, wiring up databases, and getting retrieval-augmented
+          generation systems to actually retrieve the right thing.
+        </p>
+        <p>
+          I interned at <strong>Indium Software</strong>, where I owned the backend
+          of an Internal Engineering Knowledge Search Platform — a RAG system that lets
+          engineers ask natural-language questions about internal codebases and documentation.
+          That meant FastAPI services, JWT auth, multi-tenant RBAC, and a Qdrant-backed
+          retrieval pipeline, working alongside a small team split across agents, coordination,
+          and infra.
+        </p>
+        <p>
+          I like problems that have a clean underlying structure, whether that's a coding
+          problem or a system design one — which is a big part of why backend and retrieval
+          systems have become my focus.
+        </p>
+      </div>
+
+      <aside>
+        <div class="side-card">
+          <h3>Education</h3>
+          <ul>
+            <li>B.Tech, AI &amp; Data Science</li>
+            <li>Shiv Nadar University, Chennai</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>Experience</h3>
+          <ul>
+            <li>Backend Intern @ Indium Software</li>
+            <li>Built RAG search infra</li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="foot-text">© 2026 Tarun · built with html &amp; css</span>
+    <span class="foot-text"><span class="accent">$</span> status: shipping</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

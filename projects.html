@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Tarun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">tarun<span class="dot">.</span>dev</div>
+        <nav class="tabs">
+          <a class="tab" href="index.html"
+            >home<span class="ext">.html</span></a
+          >
+          <a class="tab" href="about.html"
+            >about<span class="ext">.html</span></a
+          >
+          <a class="tab active" href="projects.html"
+            >projects<span class="ext">.html</span></a
+          >
+          <a class="tab" href="skills.html"
+            >skills<span class="ext">.json</span></a
+          >
+          <a class="tab" href="contact.html"
+            >contact<span class="ext">.html</span></a
+          >
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">menu</button>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="section" style="border-top: none; padding-top: 48px">
+        <div class="section-head">
+          <span class="path">~/projects</span>
+          <h2>git log --oneline --stat</h2>
+        </div>
+        <p class="section-lede">
+          A running log of things I've built — mostly backend-heavy, mostly
+          involving some form of retrieval, prediction, or scoring.
+        </p>
+
+        <!-- Project 1 -->
+        <div class="log-entry">
+          <div class="log-head">
+            <span class="log-title"
+              >Internal Engineering Knowledge Search Platform</span
+            >
+            <span class="log-date">2026</span>
+          </div>
+          <div class="log-body">
+            <p>
+              A RAG-based platform letting engineers query internal codebases
+              and docs in plain language. I owned the backend: FastAPI services,
+              JWT auth, multi-tenant RBAC, and user/company-scoped vector
+              collections. The team ran it on Docker Compose with PostgreSQL and
+              Qdrant, and I owned the RAG Knowledge Assistant agent — embedding
+              pipeline, generator, and index manager.
+            </p>
+            <div class="tag-row">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Qdrant</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">JWT / RBAC</span>
+              <span class="tag">Docker Compose</span>
+              <span class="tag">Sentence Transformers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="log-entry">
+          <div class="log-head">
+            <span class="log-title">CashClear — SNUC Hacks '26</span>
+            <span class="log-date">2026</span>
+          </div>
+          <div class="log-body">
+            <p>
+              A semi-autonomous financial decision engine for Indian MSMEs,
+              built with a three-person team in a hackathon setting. I handled
+              backend data ingestion and the obligation-scoring engine that
+              ranks a business's outstanding financial commitments.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Backend Ingestion</span>
+              <span class="tag">Scoring Engine</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="log-entry">
+          <div class="log-head">
+            <span class="log-title">DelayLens</span>
+            <span class="log-date">2025</span>
+          </div>
+          <div class="log-body">
+            <p>
+              Predicts food delivery delays using a Random Forest model trained
+              on order and logistics features, served through a FastAPI backend
+              with a React frontend, fully containerized for deployment.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Random Forest</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">React</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="log-entry">
+          <div class="log-head">
+            <span class="log-title">Smart Cattle Collision Prevention</span>
+            <span class="log-date">2025</span>
+          </div>
+          <div class="log-body">
+            <p>
+              A computer-vision system that detects cattle near roadways in real
+              time and pushes alerts to prevent collisions, using YOLOv8 for
+              detection and Firebase for live alert delivery.
+            </p>
+            <div class="tag-row">
+              <span class="tag">YOLOv8</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span class="foot-text">© 2026 Tarun · built with html &amp; css</span>
+        <span class="foot-text"
+          ><span class="accent">$</span> status: shipping</span
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
